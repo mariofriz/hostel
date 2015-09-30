@@ -1,13 +1,18 @@
-public class Hostel
+class Hostel : Gtk.Application
 {
+    private HostelWindow window;
+    //private HostelService service;
 
-    public void Hostel()
+    public Hostel()
     {
+        Object(application_id: "com.mariofriz.hostel");
     }
 
-    public void welcome()
+    protected override void activate()
     {
-        stdout.printf("Welcome to Hostel, the simple hosts file editor!\n");
+        // Open a hostel window for the clients
+        this.window = new HostelWindow(this);
+        this.window.show();
     }
 
 }
