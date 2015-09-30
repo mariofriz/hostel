@@ -1,6 +1,7 @@
 public static int main(string[] args)
 {
-    stdout.printf("Hello Hostel!\n");
+    Hostel hostel = new Hostel();
+    hostel.welcome();
 
     return 0;
 }

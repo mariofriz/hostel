@@ -1,4 +1,4 @@
 Hostel
 ==========
 
-A simple */etc/hosts* file editor.hh
+A simple */etc/hosts* file editor
