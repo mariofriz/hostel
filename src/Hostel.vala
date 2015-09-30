@@ -12,7 +12,7 @@ class Hostel : Gtk.Application
     {
         // Open a hostel window for the clients
         this.window = new HostelWindow(this);
-        this.window.show();
+        this.window.present();
     }
 
 }
